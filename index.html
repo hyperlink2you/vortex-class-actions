@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vortex Class Actions | Find Settlements & Track Deadlines</title>
+
+    <meta name="description"
+          content="Vortex Class Actions helps consumers discover class action settlements, data breach settlements, consumer refunds, and important claim deadlines.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="index.html" class="logo">
+            Vortex <span>Class Actions</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="settlements.html">Open Settlements</a>
+            <a href="#">Data Breaches</a>
+            <a href="#">Consumer Refunds</a>
+            <a href="#">Deadlines</a>
+            <a href="#">How It Works</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+    <div class="container">
+
+        <p class="eyebrow">
+            CONSUMER SETTLEMENT INFORMATION
+        </p>
+
+        <h1>
+            Find Settlements.<br>
+            Track Deadlines.<br>
+            Know Your Options.
+        </h1>
+
+        <p class="hero-text">
+            Vortex Class Actions helps consumers discover open
+            class action settlements, data breach settlements,
+            consumer refunds, and other compensation programs.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                placeholder="Search settlements..."
+                id="searchInput"
+            >
+
+            <button onclick="searchSettlements()">
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="categories">
+
+    <div class="container">
+
+        <h2>Explore Consumer Opportunities</h2>
+
+        <div class="category-grid">
+
+            <a href="settlements.html" class="category">
+                <h3>Open Settlements</h3>
+                <p>
+                    Browse current class action settlements
+                    and compensation programs.
+                </p>
+            </a>
+
+            <a href="#" class="category">
+                <h3>Data Breaches</h3>
+                <p>
+                    Find information about data breach
+                    settlements and claim deadlines.
+                </p>
+            </a>
+
+            <a href="#" class="category">
+                <h3>Consumer Refunds</h3>
+                <p>
+                    Explore refunds, reimbursements,
+                    recalls, and other programs.
+                </p>
+            </a>
+
+            <a href="#" class="category">
+                <h3>Upcoming Deadlines</h3>
+                <p>
+                    Keep track of important claim
+                    submission deadlines.
+                </p>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="featured">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">CURRENT OPPORTUNITIES</p>
+                <h2>Featured Settlements</h2>
+            </div>
+
+            <a href="settlements.html">
+                View All →
+            </a>
+
+        </div>
+
+
+        <div class="settlement-grid">
+
+
+            <article class="settlement-card">
+
+                <div class="badge">
+                    DATA BREACH
+                </div>
+
+                <h3>
+                    Example Data Breach Settlement
+                </h3>
+
+                <p>
+                    Information about the settlement,
+                    eligibility requirements and claim process.
+                </p>
+
+                <div class="deadline">
+                    Claim deadline: Coming soon
+                </div>
+
+                <a href="settlement-example.html">
+                    View Settlement →
+                </a>
+
+            </article>
+
+
+            <article class="settlement-card">
+
+                <div class="badge">
+                    CONSUMER
+                </div>
+
+                <h3>
+                    Example Consumer Settlement
+                </h3>
+
+                <p>
+                    Review eligibility information,
+                    documentation requirements and deadlines.
+                </p>
+
+                <div class="deadline">
+                    Claim deadline: Coming soon
+                </div>
+
+                <a href="#">
+                    View Settlement →
+                </a>
+
+            </article>
+
+
+            <article class="settlement-card">
+
+                <div class="badge">
+                    PRIVACY
+                </div>
+
+                <h3>
+                    Example Privacy Settlement
+                </h3>
+
+                <p>
+                    Learn about the settlement and find
+                    the official claim information.
+                </p>
+
+                <div class="deadline">
+                    Claim deadline: Coming soon
+                </div>
+
+                <a href="#">
+                    View Settlement →
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="how">
+
+    <div class="container">
+
+        <p class="eyebrow">
+            HOW IT WORKS
+        </p>
+
+        <h2>
+            Find. Review. Organize. Track.
+        </h2>
+
+        <div class="steps">
+
+            <div>
+                <span>01</span>
+                <h3>Find</h3>
+                <p>
+                    Search current settlement and consumer
+                    compensation information.
+                </p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <h3>Review</h3>
+                <p>
+                    Review eligibility requirements,
+                    deadlines and documentation.
+                </p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <h3>Organize</h3>
+                <p>
+                    Keep important claim information
+                    organized in one place.
+                </p>
+            </div>
+
+            <div>
+                <span>04</span>
+                <h3>Track</h3>
+                <p>
+                    Keep track of important deadlines
+                    and claim information.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <h2>
+            Don't Miss Important Deadlines
+        </h2>
+
+        <p>
+            Join the Vortex Class Actions newsletter for
+            updates about new settlements and consumer programs.
+        </p>
+
+        <form onsubmit="subscribe(event)">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                required
+            >
+
+            <button type="submit">
+                Join Free
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-brand">
+            <h3>Vortex Class Actions</h3>
+
+            <p>
+                Consumer settlement information,
+                deadlines and claim resources.
+            </p>
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="settlements.html">Open Settlements</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+
+        <div class="disclaimer">
+
+            <strong>Important Information</strong>
+
+            <p>
+                Vortex Class Actions provides general information
+                about class action settlements, consumer refunds,
+                data breach settlements, recalls and other
+                consumer compensation programs.
+            </p>
+
+            <p>
+                Vortex Class Actions is not a law firm and does not
+                provide legal advice. Information may change.
+                Eligibility, claim requirements, deadlines and
+                payment amounts are determined by the applicable
+                settlement or program administrator and official
+                documents.
+            </p>
+
+            <p>
+                Vortex Class Actions does not guarantee that any
+                individual is eligible for a settlement or will
+                receive compensation. Review official settlement
+                documents before submitting a claim.
+            </p>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Vortex Class Actions. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
